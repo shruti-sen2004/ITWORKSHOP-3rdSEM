@@ -66,6 +66,21 @@ count of prime and composite numbers entered.
 
 26. Write a program to detect whether two strings are anagrams or not.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# DAY 5 : Lists
+27. Write a program to find the maximum and minimum of a list of numbers without using built-in functions.
+28. Write a program to multiply two matrices as nested lists.
+29. Write a program to find the union of two lists.
+30. Write a program to concatenate two lists using list comprehension.
+31. Write a program to create a list from two given lists ‘list1’ and ‘list2’ of numbers such that it contains numbers that are present in ‘list2’ but not in ‘list1’.
+32. Write a program to find the distinct pair of numbers whose product is odd from a list of integers.
+# Tuples
+33. Write a program to accept a sequence of comma-separated numbers from the user and generate a tuple with those numbers.
+34. Write a program to add elements in a tuple without using built-in functions.
+35. Write a program to calculate the mean of elements in a tuple of integers.
+36. Write a program to display unique and duplicate elements of a tuple.
+37. Write a program to count the frequency of all the elements in a tuple.
+38. Write a program to find the distinct pair of numbers whose product is even from a tuple of integers.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # DAY 8 : Modules, Packages
 51. Create a module to check if a passed string is a palindrome or not. Write a program to find whether a string is a palindrome or not using this module.
 52. Create a module to check whether a number is a prime or not. Write a program to find the prime number between two limits using this module.
