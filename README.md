@@ -21,17 +21,17 @@ If the principal amount is 2,00,000 -10,00,000 the interest rate is 12%.
 If the principal amount is greater than 10,00,000 the interest rate is 15%.
 
 11. Write a program to print the following patterns:
-a) 1
-     2 , 3
-     4, 5, 6
-     7 , 8, 9, 10
-     11, 12, 13, 14, 15
+</br>a) </br>  1 </br>
+     2 , 3 </br>
+     4, 5, 6 </br>
+     7 , 8, 9, 10</br>
+     11, 12, 13, 14, 15</br>
 
-b) * * * * * * * * *
-      * * * * * * *
-        * * * * *
-           * * *
-              *
+b)  * * * * * * * * *</br>
+     * * * * * * *</br>
+        * * * * *</br>
+           * * *</br>
+             *</br>
 
 12. Write a program using a while loop to print all the odd numbers within a given range.
 
