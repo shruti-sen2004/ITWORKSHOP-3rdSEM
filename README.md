@@ -27,11 +27,8 @@ If the principal amount is greater than 10,00,000 the interest rate is 15%.
      7 , 8, 9, 10</br>
      11, 12, 13, 14, 15</br>
 
-b)  * * * * * * * * *</br>
-     * * * * * * *</br>
-        * * * * *</br>
-           * * *</br>
-             *</br>
+b)  ![image](https://github.com/shruti-sen2004/ITWORKSHOP-3rdSEM/assets/115914670/c1cd4d9b-9408-4ebd-8cbc-862ad34b8464)
+
 
 12. Write a program using a while loop to print all the odd numbers within a given range.
 
