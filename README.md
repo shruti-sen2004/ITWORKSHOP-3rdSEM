@@ -85,7 +85,15 @@ count of prime and composite numbers entered.
 42. Write a program to input player's name (string) and runs (integer) scored for n number of players where n should be input from the keyboard. Store the player’s details in a dictionary called 'cricket'. After preparing the dictionary, input the player's name and print the runs scored by the player otherwise returns'-1' if the player's name is not found.
 43. Write a program to sort (ascending order) a dictionary by value.
 44. Write a program to merge two dictionaries.
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# DAY 7 : Functions
+45. Write a program to find GCD and LCM of two numbers by defining a function to compute GCD and LCM.
+46. Write a program to define a function that accepts a string and calculates the number of uppercase letters and lowercase letters.
+47. Write a program to find all the unique elements of a list by defining a function.
+48. Write a program to find all the numbers divisible by 5 and 7 between the given range using the lambda function.
+49. Write a program to print the even numbers from a given list using the lambda function
+50. Write a program to find the maximum value from a list using the lambda function.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # DAY 8 : Modules, Packages
 51. Create a module to check if a passed string is a palindrome or not. Write a program to find whether a string is a palindrome or not using this module.
 52. Create a module to check whether a number is a prime or not. Write a program to find the prime number between two limits using this module.
