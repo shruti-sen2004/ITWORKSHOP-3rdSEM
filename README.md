@@ -1,6 +1,6 @@
 # IT WORKSHOP -3rd SEM (FOR NSEC)
 
-This repo consists of all my python codes done for the subject IT WORKSHOP (3rs SEM)
+This repo consists of all my python codes done for the subject IT WORKSHOP (3rd SEM)
 
 # DAY-1 : Introduction to Python Programming
 1. Write a program to convert temperature from degree Celsius to degree Fahrenheit.
