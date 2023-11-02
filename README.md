@@ -115,7 +115,7 @@ count of prime and composite numbers entered.
 1,1,2,3,4,9,8,27,16,81,32,243,64,729,128,2187…This series is a mixture of 2 series.
 Write a program to find the nth term in the series. The nth term calculated by the program should be printed on the screen. No other character/string or message should be printed besides the value of the nth term.
 2. Write a Python program that creates a menu-driven sorting algorithm application.
-3. Write a Python program that creates a menu-driven number base converter.
+3. Write a Python program that creates a menu-driven number base converter. ✅
 4. Write a Python program to implement stack and queue using a linked list.
 5. Write a Python program to build a secure password generator.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
