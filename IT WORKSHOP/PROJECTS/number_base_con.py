@@ -33,7 +33,7 @@ def binary_to_octal(binary_number):
     num= decimal_to_octal(binary_to_decimal(binary_number))
     return num
 
-def binary_to_hexadecimal(binary_number): #not workimg properly
+def binary_to_hexadecimal(binary_number):
     num= decimal_to_hexadecimal(binary_to_decimal(binary_number))
     return num
 
