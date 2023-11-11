@@ -110,7 +110,7 @@ count of prime and composite numbers entered.
 61. Write a program to generate a random number. Raise a user-defined exception if the number is below 0.5.
 62. Write a program to read the age of a person and raise exceptions if age is negative.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-# File Handling
+# DAY 10 : File Handling
 63. Write a program to accept a file name from the user and count the number of words present in the file.
 64. Write a program to print each line of a file in reverse order.
 65. Write a program to reverse the content of a file and store it in another file.
