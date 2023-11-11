@@ -110,6 +110,14 @@ count of prime and composite numbers entered.
 61. Write a program to generate a random number. Raise a user-defined exception if the number is below 0.5.
 62. Write a program to read the age of a person and raise exceptions if age is negative.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# File Handling
+63. Write a program to accept a file name from the user and count the number of words present in the file.
+64. Write a program to print each line of a file in reverse order.
+65. Write a program to reverse the content of a file and store it in another file.
+66. Write a program to copy the first 100 characters of a binary file into another.
+67. Write a program to copy the content of the text file to another file by converting all lowercase characters to uppercase.
+68. Write a program to copy one Python script into another in such a way that all comment lines are skipped and not copied to the destination file.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Projects
 1. Consider the following series:
 1,1,2,3,4,9,8,27,16,81,32,243,64,729,128,2187…This series is a mixture of 2 series.
