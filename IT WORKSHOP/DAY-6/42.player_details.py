@@ -1,17 +1,18 @@
-n= int(input("HOW MANY PLAYERS WOULD YOU LIKE TO ENTER?? "))
-dict={}
-print('\n')
+n= int(input("ENTER THE NUMBER OF PLAYERS THAT YOU WANT TO ENTER? "))
+cricket ={}
 
 for i in range(0,n):
-    name = input("ENTER PLAYERS NAME: ").capitalize()
-    runs = int(input("ENTER THE RUNS: "))
-    dict[name] = runs
+    p_name = input("ENTER PLAYER NAME: ")
+    p_sc= int(input("ENTER SCORE: "))
+    cricket[p_name]= p_sc
 
-print(dict)   
+print("\nSEARCH FOR THE PLAYER!!")
 
-print("\nSEARCH THE PLAYER!!!")
-search= input("ENTER THE PLAYERS NAME: ").capitalize()
-if search in dict:
-    print(f'{search} : {dict[search]}')
-else:
-    print(-1)
+choice= "yes"
+while choice.lower()=="yes":
+    search = input("ENTER THE PLAYES YOU'RE SEARCHING: ")
+    if search in cricket:
+        print("SCORE: ",cricket[search])
+    else:
+        print(-1)
+    choice= input("DO YOU WANT TO SEARCH FOR MORE PLAYERS? ")
