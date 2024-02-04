@@ -1,13 +1,15 @@
-def get_key(val):
-   
-    for key, value in my_dict.items():
-        if val == value:
-            return key
- 
-    return "key doesn't exist"
+my_dict = eval(input("ENTER A DICTIONARY: "))
 
-my_dict = {"Java": 100, "Python": 112, "C": 11}
+val_sorted= sorted(my_dict.values())
+# val_sorted= list(my_dict.values())
+# for i in range(len(val_sorted)):
+#     for j in range(i + 1, len(val_sorted)):
+#         if val_sorted[i] > val_sorted[j]:
+#            val_sorted[i], val_sorted[j] = val_sorted[j], val_sorted[i]
 
-key_sort= sorted(my_dict.values())
-for i in key_sort:
-    print(f'{get_key(i)}: {i}')
+new_dict={}
+for i in range(0,len(val_sorted)):
+    for key,val in my_dict.items():
+        if val_sorted[i]== val:
+            new_dict[key]= val
+print("SORTED DICTIONARY: ",new_dict)
