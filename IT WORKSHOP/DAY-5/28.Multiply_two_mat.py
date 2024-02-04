@@ -1,27 +1,18 @@
-X = [[12, 7, 3],
-     [4, 5, 6],
-     [7, 8, 9]]
+x= eval(input("ENETR 1ST MATRIX: "))
+y= eval(input("ENETR 2ND MATRIX: "))
 
-Y = [[5, 8, 1, 2],
-     [6, 7, 3, 0],
-     [4, 5, 9, 1]]
+row_x= len(x)
+col_x= len(x[0])
 
-# Get the number of rows and columns in X
-rows_X = len(X)
-cols_X = len(X[0])
+row_y= len(y)
+col_y= len(y[0])
 
-# Get the number of rows and columns in Y
-rows_Y = len(Y)
-cols_Y = len(Y[0])
-
-# Check if the multiplication is valid
-if cols_X != rows_Y:
-    print("The matrices cannot be multiplied")
-    exit()
-# Create a result matrix with zeros
-result = [[0 for j in range(cols_Y)] for i in range(rows_X)]
-for i in range(rows_X):
-    for j in range(cols_Y):
-        for k in range(rows_Y):
-            result[i][j] += X[i][k] * Y[k][j]
-print(result)
+if col_x != row_y:
+    print("MATRIX CANNOT BE MULTIPLIED!!")
+else:
+    result = [[0 for j in range(col_y)]for i in range(row_x)] #creates the matrix of row x*col y
+    for i in range(row_x):
+        for j in range(col_y):
+            for k in range(row_y):
+                result[i][j] += x[i][k] * y[k][j]
+    print(result)
