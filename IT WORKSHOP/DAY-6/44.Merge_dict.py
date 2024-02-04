@@ -1,13 +1,8 @@
-def merge_dicts(dict1, dict2):
-    merged_dict = dict1.copy()  
-    merged_dict.update(dict2)  
-    return merged_dict
+def merge_dict(dict1,dict2):
+    merge_dict = dict1.copy()
+    merge_dict.update(dict2)
+    return merge_dict
 
-
-dict1 = eval(input("ENTER THE FIRST DICTIONARY: "))
-dict2 = eval(input("ENTER THE SECOND DICTIONARY: "))
-
-merged_dict = merge_dicts(dict1, dict2)
-
-print("Merged dictionary:")
-print(merged_dict)
+d1= eval(input("ENTER A DICTIONARY: "))
+d2= eval(input("ENTER ANOTHER DICTIONARY: "))
+print("MERGED DICT= ",merge_dict(d1,d2))
