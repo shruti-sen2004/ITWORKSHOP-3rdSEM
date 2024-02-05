@@ -1,23 +1,22 @@
-def find_even_product_pairs(numbers):
-    even_numbers = [num for num in numbers if num % 2 == 0]
-    odd_numbers = [num for num in numbers if num % 2 != 0]
+#M-1
+num = eval(input("ENTER A TUPLE: "))
+even =[n for n in num if n%2==0]
+odd= [n for n in num if n%2!=0]
+print(even, odd)
+even_pairs= set()
+for i in even:
+    for j in odd:
+        even_pairs.add((i,j))
+for k in even:
+    even_pairs.add((k,k))
 
-    even_product_pairs = set()
+print(even_pairs)
 
-    for num1 in even_numbers:
-        for num2 in odd_numbers:
-            even_product_pairs.add((num1, num2))
-    
-    for num in even_numbers:
-        even_product_pairs.add((num, num))
-
-    return even_product_pairs
-
-# Example usage:
+#M-2
 numbers = eval(input("ENTER A TUPLE: "))
-result = find_even_product_pairs(numbers)
-count =0
-for pair in result:
-    print(pair,end=" ")
-    count +=1
-print("\nTotal even pairs: ",count)
+pairs = [] 
+for i in range(len(numbers)): 
+    for j in range(i+1, len(numbers)): 
+      if (numbers[i] * numbers[j]) % 2 == 0: 
+        pairs.append((numbers[i], numbers[j])) 
+print("The pairs are:", pairs)
