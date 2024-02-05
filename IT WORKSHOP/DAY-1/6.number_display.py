@@ -1,9 +1,11 @@
-n= (input("ENTER A NUMBER: "))
+n= input("ENTER A NUMBER: ")
 #M-1
+m= int(n)
 for i in range(4,0,-1):
-    n= n%(10**i)
-    print(n)
+    m= m%(10**i)
+    print(m)
 
 #M-2
-for i in range(len(n),0,-1):
-    print(n[:i:])
+print("\n")
+for i in range(len(n)):
+    print(n[i::])
