@@ -1,6 +1,13 @@
-from prime import prime_or_not, prime_range
-num= int(input("ENTER THE NUMBER: "))
-a= int(input("ENTER THE LOWER RANGE: "))
-b= int(input("ENTER THE UPPER RANGE: "))
-prime_or_not(num)
-prime_range(a,b)
+from prime import prime_or_not,prime_range
+
+num = int(input("ENTER A NUMBER: "))
+if prime_or_not(num)== True:
+    print(f'\n{num} is PRIME')
+else:
+    print(f'\n{num} is not prime')
+
+
+start= int(input("\nENTER THE STARTING RANGE: "))
+end= int(input("ENTER THE ENDING RANGE: "))
+print(f'PRIME NUMBERS BETWEEN {start} and {end} are: ')
+prime_range(start,end)
