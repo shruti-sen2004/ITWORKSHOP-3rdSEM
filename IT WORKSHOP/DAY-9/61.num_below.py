@@ -1,16 +1,11 @@
-class BelowThresholdError(Exception):
-    pass
+import random
 
-def generate_random_number():
-    import random
-    number = random.random()  
-    return number
-
+num = round(random.random(),4)
 try:
-    random_number = round(generate_random_number(),4)
-    print("Random number:", random_number)
-
-    if random_number < 0.5:
-        raise BelowThresholdError("Number is below 0.5")
-except BelowThresholdError as e:
-    print("Error:", e)
+    if num >= 0.5:
+        print("THE RANDOM NUMBER GENERATED IS: ",num)
+    
+    else:
+        raise ValueError(f'{num} is smaller than 0.5!!')
+except ValueError as e:
+    print(e)
