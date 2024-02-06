@@ -1,14 +1,10 @@
-class NegativeAgeError(Exception):
-    pass
-
-def get_age():
-    age = int(input("Enter your age: "))
-    if age < 0:
-        raise NegativeAgeError("Age cannot be negative.")
-    return age
+age = int(input("ENTER YOUR AGE: "))
 
 try:
-    age = get_age()
-    print("Your age is:", age)
-except NegativeAgeError as e:
-    print("Error:", e)
+    if age>=0:
+        print(f"YOUR ARE {age} year(s) old")
+    else:
+        raise ValueError("AGE CANNOT BE NEGATIVE!")
+
+except ValueError as e:
+    print(e)
