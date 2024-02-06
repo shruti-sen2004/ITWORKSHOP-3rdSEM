@@ -1,6 +1,10 @@
 f_name = input("ENTER THE FILE NAME: ")
 
-with open(f_name, 'r') as file:
+with open(f_name,'r') as file:
     content = file.read().split()
-    word_count = len(content)
-    print("TOTAL WORDS PRESENT: ",word_count)
+    print(content)
+    word_count = 0
+    for ch in content:
+        if ch.isalpha():
+            word_count +=1
+    print("TOTAL WORDS: ",word_count)
