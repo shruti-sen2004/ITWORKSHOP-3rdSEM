@@ -1,12 +1,19 @@
-def fibo_even_sum(limit):
-    a,b = 1,2
-    even_sum = 0
-    while b<= limit:
-        if b % 2==0:
-            even_sum += b
-        a,b = b, a+b
-    return even_sum
+def fib(n):
+    if (n == 0):
+        return 0
+    elif (n == 1):
+        return 1
+    else:
+        return fib(n - 1) + fib(n - 2)
 
-limit =100
-result = fibo_even_sum(limit)
-print("SUM of even terms of fibonacchi series upto 100 is: ",result)
+s = 0
+l = int(input("ENTER THE ENDING RANGE: "))
+for i in range(l+1):
+    if (fib(i) > l):
+        break
+    else:
+        if (fib(i) % 2 == 0):
+            print(fib(i))
+            s += fib(i)
+
+print('Sum of even terms is:', s)
