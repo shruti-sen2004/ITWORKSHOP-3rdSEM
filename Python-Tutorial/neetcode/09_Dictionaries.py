@@ -1,0 +1,48 @@
+from typing import List, Dict
+# dictionariees - maps or hashmaps
+# has key valye pairs; Key- unique value- may or maynot be unique
+
+my_dict = {}
+
+my_dict["Avishek"] = 30 # insertion with key not index
+my_dict["Shruti"] = 35
+print(my_dict)
+
+def list_to_dict(words: List[str]) -> Dict[str,int]:
+    mew_dict ={}
+    for i in range(len(words)):
+        w = words[i]
+        my_dict[w] = i
+    return my_dict
+print(list_to_dict(["Shruti","Avishek","Ritu"]))
+
+my_dict = {"a":[1,2],"b":{4,5,6},"c":{1:"Shru",2:"Avi"}} # can have any value
+print(my_dict["c"])
+my_dict["a"] = 100  # overides the values
+print(my_dict)
+
+print("b" in my_dict) # exists or not
+
+for key in my_dict: # loop
+    value = my_dict[key] 
+    print(key,value)
+
+for key,value in my_dict.items(): # short-hand for loop
+    print(key,value)
+
+def count_characters(word: str) -> Dict[str, int]: # frequency count
+    count= {}
+    for char in word:
+        if char not in count:  # handle KeyError
+            count[char] = 0
+        count[char] += 1
+    return count
+print(count_characters("hello"))
+
+my_dict.pop("b")
+print(my_dict)
+#my_dict.pop("d") # raises Keyerror
+my_dict.pop("d",0) # handle it; don't throw error just return 0
+
+for value in my_dict.values(): # iterate ver values
+    print(value)
