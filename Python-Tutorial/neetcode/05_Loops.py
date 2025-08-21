@@ -41,3 +41,11 @@ for i in range(1,8):
     elif i == 6:
         break # completly terminates the execution
     print(i)
+
+nums = [0,8,4,6,7]
+def has_positive(nums):
+    return any(num>0 for num in nums) # if one elements meet condition return True
+def has_zero(nums):
+    return all(num>0 for num in nums) # if all elements meet condition return True
+print(has_positive(nums))
+print(has_zero(nums))

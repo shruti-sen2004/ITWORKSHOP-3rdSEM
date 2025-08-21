@@ -30,3 +30,7 @@ print(contains_duplicate(["hello", "world", "hello", "great"]))
 
 my_set ={i for i in range(5)}
 print(my_set)
+
+def common_elements(list1, list2): # pythonic code
+    return list(set(list1) & set(list2)) # intersection-> & , union-> |, difference-> -
+print(common_elements([1,2,3,4],[6,4,7,3,5]))

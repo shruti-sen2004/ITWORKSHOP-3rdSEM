@@ -21,3 +21,7 @@ print(math.pow(2,5)) # to the power
 float("inf")
 float("-inf")
 
+# use inbuit sum(), min() and max()
+def find_sum(nums):
+    return sum(nums)
+print(find_sum([1,2]))

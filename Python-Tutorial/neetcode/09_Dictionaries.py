@@ -1,4 +1,5 @@
 from typing import List, Dict
+from collections import defaultdict
 # dictionariees - maps or hashmaps
 # has key valye pairs; Key- unique value- may or maynot be unique
 
@@ -34,6 +35,9 @@ for key in my_dict: # loop
 for key,value in my_dict.items(): # short-hand for loop
     print(key,value)
 
+# value = my_dict.get(key, default_value) # better way to check existence
+# simplies dictionary lookups with default values
+
 def count_characters(word: str) -> Dict[str, int]: # frequency count
     count= {}
     for char in word:
@@ -42,6 +46,12 @@ def count_characters(word: str) -> Dict[str, int]: # frequency count
         count[char] += 1
     return count
 print(count_characters("hello"))
+
+# frequency-count short hand - pythonic code
+counts = defaultdict(int) # auto initializes counts to 0
+for item in my_dict:
+    counts[item] += 1
+print(counts)
 
 my_dict.pop("b")
 print(my_dict)
