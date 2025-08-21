@@ -1,6 +1,7 @@
 from typing import List
 # Sets - unordered collection; contains only unique element
 # implemented with Hashsets
+# searching and inserton in constant time
 my_set = {1,2,3}
 
 my_set2 = set()  # don't do {}
@@ -26,3 +27,6 @@ def contains_duplicate(words: List[str]) -> bool: # checks for duplicates in a l
     words_set = set(words)
     return len(words_set) < len(words)
 print(contains_duplicate(["hello", "world", "hello", "great"]))
+
+my_set ={i for i in range(5)}
+print(my_set)

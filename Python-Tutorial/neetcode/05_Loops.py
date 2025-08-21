@@ -13,7 +13,7 @@ while n < 100 : # printing multiples of 10 upto 90
 print()
 
 # for-loop
-for i in range(10): # 0 to 9
+for i in range(10): # 0 to 9, auto increment 1
     print(i)
 print()
 

@@ -43,9 +43,15 @@ print(last_n_charecters(name,5));
 print(name[::-1])  # reverse the string
 
 # Strings - Immutable; cannot modify an existing string
+# modification creates a new string rather updating th same one
 
 receiver,sender = "Ritu", name
 msg_1 = "Hello {} I am {}.\n".format(receiver,sender) 
 msg_2 = f"Hello {receiver} I am {sender}.\n"
 msg_3 = "Hello {1} I am {0}.\n".format(receiver,sender) 
 print(msg_1,msg_2,msg_3)
+
+print(ord("a")) # Ascii value
+
+strings= ["ab","cd","ef"]
+print(" ".join(strings)) # output: ab cd ef

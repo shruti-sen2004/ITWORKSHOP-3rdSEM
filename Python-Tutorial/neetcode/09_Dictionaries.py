@@ -23,6 +23,10 @@ print(my_dict)
 
 print("b" in my_dict) # exists or not
 
+myMap = {i:2*i for i in range(3)}
+print(myMap)
+print()
+
 for key in my_dict: # loop
     value = my_dict[key] 
     print(key,value)

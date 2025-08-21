@@ -6,7 +6,9 @@ msg = "Second message" # can be reasssigned
 print(msg) # prints the latest assigned value
 
 ms1, ms2 = 5,6  # multiple assignment in single line
+ms1, ms2 = "Hello",20 # different types can be assigned
 ms1,ms2 = ms2,ms1 #swapping without third variable
+print(ms1,ms2)
 
 # Types of Variables
 print(type(12)) # int
