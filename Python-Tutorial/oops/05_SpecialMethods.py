@@ -50,7 +50,7 @@ print(len(emp_1))
 
 '''
 NOTE : 
-Python does not support method overloading like java or c (it is dynamically typed it becomes unnecessary)
+Python does not support method overloading like java or c++ (it is dynamically typed it becomes unnecessary)
 In python, if multiple methods with same names are defined, the last defination will overwrite the previous ones.
 
 But similar functionality can be achieved using :
