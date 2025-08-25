@@ -67,3 +67,26 @@ print(isinstance(mgr_1,Developer))
 
 print(issubclass(Manager,Employee))
 print(issubclass(Manager,Developer))
+
+# Multiple inheritence 
+# Python fixes diamond problem using MRO(method resolution order)
+
+class Grandparent:
+    def speak(self):
+        return "I am the Grandparent."
+
+class ParentA(Grandparent):
+    def speak(self):
+        return "I am Parent A."
+
+class ParentB(Grandparent):
+    def speak(self):
+        return "I am Parent B."
+
+# The Diamond Problem: Child inherits from ParentA and ParentB
+class Child(ParentA, ParentB):
+    pass
+
+c = Child()
+print(c.speak()) # Output: "I am Parent A."
+print(Child.mro()) # Python's MRO determines which 'speak' method to call.
